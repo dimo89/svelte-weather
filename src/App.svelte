@@ -26,7 +26,8 @@
 
   function handleClick() {
     promise = getForecast();
-	}
+  }
+  
 	
 	setInterval(handleClick, 60000);
 </script>
@@ -70,6 +71,9 @@
   }
 </style>
 
+<svelte:head>
+  <title>Svelte Open Weather</title>
+</svelte:head>
 <main>
   <button on:click={handleClick}>Get Forecast</button>
   {#await promise}
