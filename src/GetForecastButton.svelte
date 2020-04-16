@@ -1,15 +1,15 @@
 <script>
-  import { createEventDispatcher } from 'svelte';
+  import { createEventDispatcher } from "svelte";
 
-	const dispatch = createEventDispatcher();
+  const dispatch = createEventDispatcher();
 
-	function onClick() {
-    dispatch('click', {});
-	}
+  function onClick() {
+    dispatch("click", {});
+  }
 </script>
 
 <style>
-    button {
+  button {
     outline: none;
     border-radius: 12px;
     color: #a2aad3;
@@ -18,6 +18,7 @@
     padding: 6px 12px;
     text-transform: uppercase;
     font-weight: 300;
+    transition: background-color 200ms linear;
   }
 
   button:hover {

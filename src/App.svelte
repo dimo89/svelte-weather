@@ -6,7 +6,7 @@
   import Description from "./Description.svelte";
   import ThemeToggle from "./ThemeToggle.svelte";
   import ThemeContext from "./ThemeContext.svelte";
-  import GetForecastButton from './GetForecastButton.svelte';
+  import GetForecastButton from "./GetForecastButton.svelte";
 
   let promise = getForecast();
   const API_KEY = "483da3075ed2856a4352900f0911b283";
@@ -38,6 +38,7 @@
   :global(html) {
     background-color: var(--theme-background);
     color: var(--theme-text);
+    transition: background-color 200ms linear;
   }
 
   main {
